@@ -1,0 +1,45 @@
+.juego {
+    background-color: blue;
+   font-size: 600%;
+    text-align: center;
+}
+body { 
+    background-image: url(fotofondo.jpg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    margin: 5%;
+    background-repeat: no-repeat;
+    
+}
+html {
+    height: 100vh;
+}
+html, body {
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    flex-direction: column;
+    
+}
+p {
+    /* color:#e6e219; */
+    vertical-align: bottom;
+    text-align: center;
+    animation: algo 3s ease-in-out 2s infinite;
+}
+
+@keyframes algo {
+    from {color:rgb(29, 29, 29)}
+    50% {color: rgb(233, 19, 19);}
+    to {color:rgb(29, 29, 29)}
+}
+
+h2 {
+    text-align: center;
+
+    font-size: 500%;
+    
+}
+
+
+
