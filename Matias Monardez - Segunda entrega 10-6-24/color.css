@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    margin: 5%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    background-color: red;
+   margin: 20%;
+   text-align: center;
+  font-size: 500%;
+  animation: algo 3s ease-in-out 2s infinite;
+  position: absolute;
+}
+@keyframes algo {
+    from {color:rgb(29, 29, 29)}
+    50% {color: rgb(233, 19, 19);}
+    to {color:rgb(29, 29, 29)}
+}
