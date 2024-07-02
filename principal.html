@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet shop - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Pet shop</h1>
+        <nav>
+            <ul>
+                <li><a href="principal.html">Inicio</a></li>
+                <li><a href="./productos.html">Categorías</a></li>
+                <li><a href="./carrito.html">Carrito</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="productos-destacados">
+            <h2>Productos Destacados</h2>
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <!-- Contenido dinámico del carrusel -->
+                    <div>
+                        <h2>Petbrilho</h2>
+                        <img src="./fotos/champoo.webp" alt="Champoo neutro">
+                        <p>U$D 5</p>
+                        <button class="agregar-carrito" data-nombre="Champoo neutro" data-precio="20.00">Agregar al
+                            carrito</button>
+                    </div>
+                    <div>
+                        <h2>Sanitario para gatos</h2>
+                        <img src="./fotos/sanitario de gatos.jpg" alt="Kit Sanitario">
+                        <p>U$D 6</p>
+                        <button class="agregar-carrito" data-nombre="Kit sanitario" data-precio="100.00">Agregar al
+                            carrito</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-buttons">
+                <button class="carousel-button" id="prev">Anterior</button>
+                <button class="carousel-button" id="next">Siguiente</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> Pet shop 2023 - 2024.</p>
+    </footer>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>

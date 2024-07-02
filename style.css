@@ -1,0 +1,357 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+header {
+    background-color: #38004d;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilos para la sección de Productos Destacados */
+.productos-destacados {
+    list-style: none;
+    text-align: center;
+    margin: 50px 0;
+    padding-left: 5%;
+    
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    
+    
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.producto {
+    min-width: 25%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.producto h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    
+}
+
+.producto p {
+    font-size: 1em;
+    color: #333;
+    
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.carousel-button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.productos-destacados .agregar-carrito {
+    font-size: 100%;
+   
+}
+
+/*!Productos*/
+
+main {
+    background-color: #fdfffe;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.categorias {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 10px;
+    font-style: normal;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: nowrap;
+    padding-left: 550px;
+    margin-bottom: 100px;
+}
+
+.categorias div {
+    align-items:center;
+    border: #004d40 solid 20px;
+    padding: 5px;
+    margin-left: 20px;
+    width: 300px;
+    height: 300px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align:center;
+}
+
+.categorias div ul {
+    list-style: none;
+    font-style: normal;
+    font-size: 30px;
+    margin: 0%;
+    
+}
+
+.categorias div ul li {
+    text-align:center;
+}
+
+.categorias img {
+    width: 300px;
+    height: 250px;
+    padding-bottom: 20px;
+
+    
+}
+
+
+/*HIGIENE*/
+
+.higiene {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 10px;
+    padding: 25px;
+    margin: 25px;
+    font-style: normal;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.higiene div {
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    height: 300px;
+    width: 200px;
+    border: 2px rgb(219, 144, 4) solid;
+    padding: 25px;
+    background-color: rgba(219, 168, 0, 0.897);
+    margin: 30px;
+}
+
+.higiene div img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+/*textil*/
+.Textil {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 10px;
+    padding: 25px;
+    margin: 25px;
+    font-style: normal;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.Textil div {
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    height: 300px;
+    width: 300px;
+    border: 2px rgb(219, 144, 4) solid;
+    padding: 25px;
+    background-color: rgba(219, 168, 0, 0.897);
+    margin: 30px;
+   
+    
+}
+
+.Textil div img {
+    width: 200px;
+    height: 200px;
+}
+
+.agregar-carrito {
+    width: 200px;
+    height: 30px;
+    font-size: 200%;
+    background-color: grey;
+    box-shadow:darkred
+}
+
+/*!CARRITO*/
+
+#carrito-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#carrito-container .producto {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#carrito-container .producto:last-child {
+    border-bottom: none;
+}
+
+#carrito-container .producto img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 4px;
+}
+
+#carrito-container .producto h3 {
+    flex: 1;
+    margin: 0 20px;
+}
+
+#carrito-container .producto p {
+    color: #003366;
+    font-size: 16px;
+    margin: 0;
+}
+
+#carrito-container .producto button {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+
+#carrito-container .producto button:hover {
+    background-color: #cc0000;
+}
+
+#total-container {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#total {
+    color: #003366;
+    font-weight: bold;
+}
+
+
+/*?CONTACTO*/
+
+
+#contacto {
+    color: black;
+    flex-direction: column;
+    text-align: center;
+    border: none;
+    font-size: 30px;
+}
+
+#contacto .form-contacto {
+    color: black;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacto .form-contacto div {
+    padding: 5px;
+    color: rgb(122, 50, 48);
+    font-weight: 500px;
+    font-size: 20px;
+}
+
+#contacto .form-contacto div input {
+    width: 160px;
+    border: rgb(136, 63, 63) 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    color: black;
+    font-weight: 200px;
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    color: black;
+}
+
+/*?FOOTER*/
+footer {
+    background-color: #4d0035;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+p {
+    font-size: 150%;
+}
