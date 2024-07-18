@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet shop - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Pet shop</h1>
+        <nav>
+            <ul>
+                <li><a href="principal.html">Inicio</a></li>
+                <li><a href="./productos.html">Categorías</a></li>
+                <li><a href="./carrito.html">Carrito</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="productos-destacados">
+            <h2>Productos Destacados</h2>
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+
+                    <div class="producto" data-nombre="shampoo neutro" data-precio="$2.000">
+                        <img src="./fotos/champoo.webp" alt="neutro">
+                        <h3>Oferta ropa</h3>
+                        <p>$ 2.000</p>
+                        <button class="agregar-carrito" data-precio="2000">Agregar al carrito</button>
+                    </div>
+                    <div class="producto" data-nombre="kit sanitario" data-precio="$3.000">
+                        <img src="./fotos/sanitario de gatos.jpg" alt="sanitario">
+                        <h3>Oferta ropa</h3>
+                        <p>$ 3.000</p>
+                        <button class="agregar-carrito" data-precio="3000">Agregar al carrito</button>
+                    </div>
+                    <div class="producto" data-nombre="Champoo negro y blanco" data-precio="$4.000">
+                        <img src="./fotos/champoonegroyblanco.jpeg" alt="Champoo">
+                        <h3>Champoo negro y blanco</h3>
+                        <p>$ 4.000</p>
+                        <button class="agregar-carrito" data-precio="4000">Agregar al carrito</button>
+                    </div>
+                    <div class="producto" data-nombre="Dental" data-precio="$3500">
+                        <img src="./fotos/kit dental.jpg" alt="Dental">
+                        <h3>Kit dental</h3>
+                        <p>$ 3.500</p>
+                        <button class="agregar-carrito" data-precio="3500">Agregar al carrito</button>
+                    </div>
+                    <div class="producto" data-nombre="Cepillos" data-precio="$1500">
+                        <img src="./fotos/cepillos ofertas.jpg" alt="Cepillos">
+                        <h3>Cepillos oferta</h3>
+                        <p>$ 1.500</p>
+                        <button class="agregar-carrito" data-precio="1500">Agregar al carrito</button>
+                    </div>
+
+                    <div class="producto" data-nombre="Promo" data-precio="$4000">
+                        <img src="./fotos/Promo.webp" alt="Promo">
+                        <h3>Promo chaleco + buzo</h3>
+                        <p>$ 4.000</p>
+                        <button class="agregar-carrito" data-precio="4000">Agregar al carrito</button>
+                    </div>
+                    <div class="producto" data-nombre="Oferta ropa" data-precio="$2500">
+                        <img src="./fotos/oferta ropa.webp" alt="oferta ropa">
+                        <h3>Oferta ropa</h3>
+                        <p>$ 2.500</p>
+                        <button class="agregar-carrito" data-precio="2500">Agregar al carrito</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-buttons">
+                <button class="carousel-button" id="prev">Anterior</button>
+                <button class="carousel-button" id="next">Siguiente</button>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p> Pet shop 2023 - 2024.</p>
+    </footer>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                dots: true
+            });
+        })
+
+    </script>
+</body>
+
+</html>
