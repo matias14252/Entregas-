@@ -1,0 +1,39 @@
+/* Contenedor general */
+.container {
+    width: 100%;          
+    height: 100vh;        
+    margin: 0;            
+    padding: 55px;        
+    box-sizing: border-box; 
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;         
+  }
+  
+  h1 {
+    font-size: 3rem;      
+  }
+  
+  p {
+    font-size: 1.5rem;   
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3; 
+  }
+  
