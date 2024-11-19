@@ -1,0 +1,14 @@
+<h1>Lista de productos</h1>
+
+<ul>
+    {{!Metodo foreach en hbs}}
+    {{#each productos}}
+    {{!Consulto por atributos del objeto}}
+    {{#if status}}
+    <h3>Producto {{nombre}}</h3>
+    <p>Marca: {{marca}}</p>
+    <p>Precio: ${{precio}}</p>
+    <p>Stock: {{stock}} unidades</p>
+    {{/if}}
+    {{/each}}
+</ul>
