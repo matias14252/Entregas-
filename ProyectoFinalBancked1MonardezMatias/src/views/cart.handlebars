@@ -1,0 +1,27 @@
+<div class="container mt-5">
+    <h1>Carrito de Compras</h1>
+
+    {{#if cartProducts}}
+        <h2>Productos en el Carrito:</h2>
+        {{#each cartProducts}}
+            <div class="card" data-product="{{id}}">
+                <div class="card-body">
+                    <p class="card-text">Título: {{title}} Precio: {{price}} Cantidad: {{quantity}}</p>
+                    <button class="btn btn-danger" onclick="removeFromCart('{{id}}', '{{../cartId}}')">Eliminar del carrito</button>
+                </div>
+            </div>
+        {{/each}}
+
+        <p id="cartTotal" class="mt-3">Total: {{cartTotal}}</p>
+        <button class="btn btn-primary" onclick="checkout('{{cartId}}')">Finalizar compra</button>
+
+        <button class="btn btn-warning" onclick="emptyCart('{{cartId}}')">Vaciar carrito</button>
+
+    {{else}}
+        <p>El carrito está vacío.</p>
+    {{/if}}
+
+    <a href="/home" class="mt-3">
+        <button class="btn btn-success">Agregar más productos</button>
+    </a>
+</div>
