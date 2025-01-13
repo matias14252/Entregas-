@@ -1,0 +1,28 @@
+<div class="container mt-5">
+    <h1>Productos</h1>
+
+    {{#if user.first_name}}
+        {{#if user.last_name}}
+            <h2 class="mt-3">¡Bienvenido/a {{user.first_name}} {{user.last_name}}!</h2>
+        {{/if}}
+    {{/if}}
+
+    <a href="/cart" class="btn btn-primary mt-3">Ir al carrito</a>
+
+    {{#each products}}
+        <div class="card mt-3">
+            <div class="card-body">
+                <p class="card-text">Título: {{title}} Precio: {{price}}</p>
+
+                <div class="form-group">
+                    <label for="quantity{{_id}}">Cantidad:</label>
+                    <input type="number" class="form-control" id="quantity{{_id}}" name="quantity{{_id}}" value="1" min="1">
+                </div>
+
+                <button class="btn btn-success" onclick="addToCart('{{_id}}', '{{../user.cart}}', document.getElementById('quantity{{_id}}').value)">Agregar al carrito</button>
+            </div>
+        </div>
+    {{/each}}
+</div>
+
+

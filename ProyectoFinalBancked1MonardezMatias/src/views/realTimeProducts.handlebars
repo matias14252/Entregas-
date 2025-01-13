@@ -1,0 +1,41 @@
+<div class="container mt-5">
+    <h1>Productos agregados a la fecha</h1>
+    <div id="paragraphProds">
+        {{#each products}}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <p class="card-text">Título: {{title}} Descripción: {{description}} Precio: {{price}} Código: {{code}} Stock: {{stock}} Categoría: {{category}} Estado: {{status}} Id: {{_id}}</p>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+
+    <h2>Crear Nuevo Producto</h2>
+    <form id="idForm">
+        <div class="form-group">
+            <label for="title">Título</label>
+            <input type="text" class="form-control" required name="title">
+        </div>
+        <div class="form-group">
+            <label for="description">Descripción</label>
+            <input type="text" class="form-control" required name="description">
+        </div>
+        <div class="form-group">
+            <label for="category">Categoría</label>
+            <input type="text" class="form-control" required name="category">
+        </div>
+        <div class="form-group">
+            <label for="price">Precio</label>
+            <input type="number" class="form-control" required name="price">
+        </div>
+        <div class="form-group">
+            <label for="stock">Stock</label>
+            <input type="number" class="form-control" required name="stock">
+        </div>
+        <div class="form-group">
+            <label for="code">Código</label>
+            <input type="text" class="form-control" required name="code">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>

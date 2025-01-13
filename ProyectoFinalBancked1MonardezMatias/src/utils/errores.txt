@@ -1,0 +1,18 @@
+POSIBLES ERRORES REFERIDOS A PRODUCTOS:
+-Al agregar al carrito:
+    -No se encuentra el carrito.
+    -No se encuentra el producto en la base de datos.
+
+-Al crear producto:
+    -Falta algún campo requerido en el formulario.
+    -Se intenta crear un producto ya existente en la base de datos.
+
+-Al modificar producto:
+    -No se encuentra el producto en la base de datos.    
+    -Se intenta cambiar el código del producto por uno ya existente.
+
+-Al eliminar producto:
+    -No se encuentra el producto en la base de datos.
+
+-Al finalizar compra:
+    -No hay suficiente stock de algún producto/s del carrito.

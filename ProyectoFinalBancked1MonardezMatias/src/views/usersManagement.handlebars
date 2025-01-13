@@ -1,0 +1,14 @@
+<div class="container mt-5">
+    <h1>Gestión de usuarios</h1>
+
+    {{#each users}}
+        <div class="card mb-3" data-email="{{email}}">
+            <div class="card-body">
+                <p class="card-text">Nombre: {{first_name}}</p>
+                <p class="card-text">Apellido: {{last_name}}</p>
+                <p class="card-text">Email: {{email}}</p>
+                <button class="btn btn-danger" onclick="deleteUser('{{email}}')">Eliminar usuario</button>
+            </div>
+        </div>
+    {{/each}}
+</div>
