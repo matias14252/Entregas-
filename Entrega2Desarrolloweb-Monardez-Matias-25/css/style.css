@@ -1,0 +1,579 @@
+@font-face {
+    font-family: "Bebas+Neue", sans-serif;
+    src: url(../tipografias/BebasNeue-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas neue", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 12px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+header .list-item a {
+    text-decoration: none;
+    font-family: "Bebas neue", sans-serif;
+    font-size: 18px;
+    font-weight: 400px;
+    color: rgb(87, 25, 41);
+    padding: 60px;
+}
+
+header .list-item-dropdown a {
+    text-decoration: none;
+    font-family: "Bebas neue", sans-serif;
+    font-size: 18px;
+    font-weight: 400px;
+    color: rgb(87, 25, 41);
+    padding: 60px;
+
+}
+
+header .list-item-logo a {
+    font-size: 34px;
+    padding: 12px 24px;
+    font-family: "Bebas neue", sans-serif;
+}
+
+.list-item-dropdown {
+    position: relative;
+}
+
+.list-item-dropdown:hover .dropdown-container {
+    display: flex;
+}
+
+.dropdown-container {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: rgb(87, 25, 41);
+    color: white;
+    padding: 20px;
+    flex-direction: column;
+    width: 100px;
+    border-radius: 8px;
+}
+
+.dropdown-container li {
+    border-right: unset;
+    padding: 12px 0px;
+    border-bottom: 1px solid rgb(138, 46, 74);
+    font-size: 14px;
+    align-items: center;
+}
+
+.dropdown-container li:last-of-type {
+    border-bottom: unset;
+}
+
+#contacts .contacts ul {
+    font-family: "Bebas neue", sans-serif;
+
+
+}
+
+#hero {
+    width: 100%;
+    height: 600px;
+    background-image: url(../imagenes/pintura.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 60px;
+}
+
+#hero h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 120px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    padding: 0px 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero p {
+
+    font-size: 30px;
+    font-weight: 60;
+    padding: 0px 60px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+#hero a { 
+    background-color: rgb(138, 46, 74);
+    padding: 15px 20px;
+    margin: 475px;
+    border-radius: 8px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    width: 10px;
+    cursor: pointer;
+
+}
+
+
+#information {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 40px;
+}
+
+#information h2 {
+
+    color: rgb(87, 25, 41);
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#Information .information-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.information-container .Information {
+    width: 60%;
+
+}
+
+.information-container h3 {
+    font-size: 20px;
+}
+
+.information-container p {
+    color: rgb(138, 46, 74);
+    font-family: "helvetica", sans-serif;
+    font-size: 15px;
+
+}
+
+#Publication {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+
+}
+
+#Publication .video-container{
+    width: 42%;
+}
+
+
+#Publication .text-container {
+    width: 15%
+}
+
+#Publication .video-container iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#Publication .text-container p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(99, 84, 96);
+    font-family: "helvetica", sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    height: 100%;
+}
+
+#Publication .table-container{
+    display: flex;
+    align-items: center;
+    background-color: rgb(99, 84, 96);
+    font-family: "Bebas neue", sans-serif;
+    font-size: 20px;
+    text-align: left;
+    justify-content: center;
+    padding: 10px;
+    width: 43%;    
+}
+
+#MorePublication {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:500px;
+}
+
+#MorePublication .publication2,
+#MorePublication .geo {
+    width: 50%;
+    background-color: rgb(99, 84, 96);
+}
+
+#MorePublication .publication2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#MorePublication .geo h2 {
+    color: rgb(99, 84, 96);
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+#MorePublication .geo {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 68%;
+    height:100%;
+    padding-bottom: 50px;
+
+}
+
+#members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 50px;
+}
+
+#members h2 {
+    font-size: 100px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    padding: 0px 60px;
+    color: rgb(99, 84, 96);
+}
+
+#members h3 {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    padding: 0px 10px;
+    font-family: "helvetica", sans-serif;
+    color: rgb(99, 84, 96);
+}
+
+#members .Team-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(99, 84, 96);
+    color: white;
+    font-family: "Bebas neue", sans-serif;
+    font-size: 15px;
+    padding: 50px;
+    width: 100%;
+}
+
+.Team-container .ludmila p,
+.Team-container .maria p,
+.Team-container .sol p {
+    font-size: 20px;
+    font-weight: 40;
+    font-family: "helvetica", sans-serif;
+    padding: 0px 50px;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.tattoo-img img,
+.tattoo-maria-img img,
+.tattoo-sol-img img {
+    height: 300px;
+    width: 50%;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#formcontact {
+    background-image: url(../imagenes/img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contactcontainer h2 {
+    color: rgb(99, 84, 96);
+    height: 45%;
+    font-weight: 600;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+#Products{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Bebas neue", sans-serif;
+    margin: 20px;
+} 
+#title-prod {
+    background-image: url(../imagenes/pintura.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+#title-prod .ourproducts{
+    text-align: center;
+    font-size: 120px;
+    font-weight: 600;
+    padding: 80px 80px;
+    font-family: "Bebas neue", sans-serif;
+}
+
+#Products h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 120px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    padding: 0px 60px;
+    justify-content: center;
+    align-items: center;
+}
+#Products .card{
+    margin: 20px;
+    justify-content: center;
+}
+#Products .card-title,
+#Products .card-text{
+    font-family: "helvetica", sans-serif;
+    color: rgb(99, 84, 96);
+    font-size: 20px;
+    margin: 10px;
+}
+
+#Products a{
+    background-color: rgb(138, 46, 74);
+    border-radius: 8px;
+    border-color: unset;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.contactcontainer p {
+    padding: 40px 60px;
+    color: rgb(138, 46, 74);
+    font-size: 25px;
+    margin: 30px;
+    align-items: center;
+}
+
+
+.form-label {
+    color: rgb(138, 46, 74);
+    font-size: 14px;
+}
+
+.form-control {
+    font-size: 16px;
+
+}
+
+.col-md-4 .option{
+    font-family: "Bebas neue", sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding: 0px 60px;
+    font-family: "Bebas neue", sans-serif;
+}
+
+#Tattos{
+    background-image: url(../imagenes/img.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+
+#Tattos h1 {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    font-size: 120px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: "Bebas neue", sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+}
+
+footer img {
+    justify-content: flex-start;
+    object-fit: cover;
+    width: 100px;
+    padding: 0px 10px;
+}
+
+footer a {
+    background-color: rgb(138, 46, 74);
+    padding: 15px 10px;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    width: fit-content;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+@media (max-width: 480px){
+    
+    *{
+        margin: 0;
+    }
+    
+    header .list-item a {
+        font-size: 12px;
+        font-weight: 100px;
+        padding: 8px 4px;
+    }
+
+    #hero {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 10%;
+        background-color: ;
+    }
+
+    #hero h1 {
+        font-size: 60px;
+        margin: 40px;
+        width: 100%;
+        height: 30%;
+    }
+    #hero p {
+        font-size: 30px;
+        padding: 2px 40px;
+        margin: 10px;
+    }
+
+    #hero a{ 
+        flex-direction: row;
+        margin: 60px;
+        border-radius: 8px;
+        font-size: 10px;
+        font-weight: 100;
+        width: 10px;
+    }
+    #information {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        width: 100%;
+        height: 104%;
+        margin: 45px;
+    }
+    #Information .information-container {
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    #information h2 {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    #Publication {
+        flex-direction: column;
+        justify-content:center ;
+
+    }
+
+    #Publication .video-container{
+        height: 200px;
+        width: 400px;
+        margin: 30px;
+        padding: 2px 4px;
+        margin-top: 18px;
+}
+    #Publication .text-container{
+        width: 104%
+}
+    #Publication .text-container p {
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+    padding: 10px;
+    height: 100%;
+    margin: 10px;
+}
+    #Publication .table-container {
+        font-size: 12px;
+        text-align: center;
+        padding: 10px 75px;
+        width: 86%;
+}
+    #MorePublication .geo {
+        padding: 0px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+}
