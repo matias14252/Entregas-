@@ -1,0 +1,18 @@
+$color-primary: black;
+$color-secundary: rgb(87, 25, 41);
+$color-thrid: rgb(138, 46, 74);
+
+$tipography-principal: url(./tipografias/BebasNeue-Regular.ttf);
+
+
+//Layout
+
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+//Pages
+@import "./pages/about-us.scss";
+@import "./pages/services";
+@import "./pages/contact.scss";
+@import "./pages/index.scss";
+@import "./pages/product.scss";

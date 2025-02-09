@@ -1,0 +1,19 @@
+{
+  "name": "entregafinal-matias",
+  "version": "1.0.0",
+  "description": "entrega final - DESARROLLO WEB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matias14252/Entregas-/Final-Matias-monardez-2025-.git#main"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matias14252/Entregas-/Final-Matias-monardez-2025-/issues"
+  },
+  "homepage": "https://github.com/matias14252/Entregas-/Final-Matias-monardez-2025-/tree/main#readme"
+}

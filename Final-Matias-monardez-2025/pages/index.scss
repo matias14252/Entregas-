@@ -1,0 +1,169 @@
+
+#contacts {
+    .contacts {
+        ul {
+            font-family: "Bebas neue", sans-serif;
+        }
+    }
+}
+
+#hero {
+    width: 100%;
+    height: 600px;
+    background-image: url(../imagenes/pintura.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 120px;
+        font-weight: 600;
+        margin-bottom: 32px;
+        padding: 0 60px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        font-size: 30px;
+        font-weight: 60;
+        padding: 0 60px;
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+
+    a {
+        background-color: rgb(138, 46, 74);
+        padding: 15px 20px;
+        margin: 475px;
+        border-radius: 8px;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+        text-decoration: none;
+        width: 10px;
+        cursor: pointer;
+    }
+}
+
+#information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 40px;
+
+    h2 {
+        color: rgb(87, 25, 41);
+        font-weight: 600;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .information-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+}
+h3 {
+    font-size: 20px;
+}
+
+p {
+    color: rgb(138, 46, 74);
+    font-family: "helvetica", sans-serif;
+    font-size: 15px;
+}
+
+#Publication {
+display: flex;
+flex-direction: row;
+height: 500px;
+
+.video-container {
+    width: 42%;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.text-container {
+    width: 15%;
+
+    p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(99, 84, 96);
+        font-family: "helvetica", sans-serif;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+        height: 100%;
+    }
+}
+
+.table-container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(99, 84, 96);
+    font-family: "Bebas neue", sans-serif;
+    font-size: 20px;
+    text-align: left;
+    justify-content: center;
+    padding: 10px;
+    width: 43%;
+}
+}
+
+#MorePublication {
+display: flex;
+flex-direction: row;
+justify-content: center;
+height: 500px;
+
+.publication2,
+.geo {
+    width: 50%;
+    background-color: rgb(99, 84, 96);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    h2 {
+        color: rgb(99, 84, 96);
+        font-size: 40px;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .geo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 68%;
+        height: 100%;
+        padding-bottom: 50px;
+    }
+}
+}

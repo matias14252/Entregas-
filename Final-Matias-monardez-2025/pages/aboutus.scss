@@ -1,0 +1,62 @@
+#members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 50px;
+
+    h2 {
+        font-size: 100px;
+        font-weight: 600;
+        margin-bottom: 32px;
+        padding: 0 60px;
+        color: rgb(99, 84, 96);
+    }
+
+    h3 {
+        font-size: 50px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        padding: 0 10px;
+        font-family: "helvetica", sans-serif;
+        color: rgb(99, 84, 96);
+
+        .Team-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(99, 84, 96);
+            color: white;
+            font-family: "Bebas neue", sans-serif;
+            font-size: 15px;
+            padding: 50px;
+            width: 100%;
+
+            .mati,
+            .maria,
+            .sol {
+                p {
+                    font-size: 20px;
+                    font-weight: 40;
+                    font-family: "helvetica", sans-serif;
+                    padding: 0 50px;
+                    margin: 20px;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        .tattoo-img,
+        .tattoo-maria-img,
+        .tattoo-sol-img {
+            img {
+                height: 300px;
+                width: 50%;
+                height: 30%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+    }
+}
