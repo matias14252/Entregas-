@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-white">
+        <div class="container-fluid bg-white">
+          <a class="navbar-brand fs-5 fw-bold" href="">Pelis +</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse ms-auto"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+            <ul
+              class="navbar-nav d-flex justify-content-end gap-4"
+              role="search"
+            >
+              <li class="nav-item">
+                <a class="nav-link text-dark fs-6" href="./pages/catalogo.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item fs-6">
+                <a class="nav-link text-dark" href="./pages/about.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+
+              <li class="nav-item fs-6">
+                <a class="nav-link text-dark" href="./pages/contact.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Front Page -->
+      <section class="front_page">
+        <div class="front_page_text">
+          <h1>Pelis + ofrece servicios únicos para personas únicas</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam
+            velit, vulputate eu pharetra nec, mattis ac neque.
+          </p>
+
+          <div class="buttons_container">
+            <a href="./pages/catalogo.html" class="btn_submit">Ver catalogo</a>
+            <a class="btn_outlined" href="./pages/about.html">Sobre nosotros</a>
+          </div>
+        </div>
+
+        <img
+          src="https://thejoyofmovies.ca/wp-content/uploads/2024/05/kingdom-of-the-planet-of-the-apes-poster.jpeg"
+          alt="Cover Image"
+        />
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer" id="contacto">
+        <div class="footer">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4><b>Acerca de nosotros</b></h4>
+              <li><a href="./pages/about.html">Nuestros objetivos</a></li>
+              <li><a href="./pages/about.html">Servicios de salud</a></li>
+              <li><a href="./pages/about.html">Contacto con nostros</a></li>
+              <li><a href="./pages/about.html">Contexto de pandemia</a></li>
+            </div>
+            <div class="footer-col">
+              <h4><b>Horarios de Atención</b></h4>
+              <li>
+                <p>Lunes a Viernes</p>
+              </li>
+              <li>
+                <p>9:30hs - 13:00hs</p>
+              </li>
+              <li>
+                <p>16:00hs - 19:00hs</p>
+              </li>
+            </div>
+
+            <div class="footer-col">
+              <h4><b>Redes sociales</b></h4>
+              <li>
+                <a href="">Instagram</a>
+              </li>
+              <li>
+                <a href="">9:30hs - 13:00hs </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Bootstrap and SCSS -->
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
